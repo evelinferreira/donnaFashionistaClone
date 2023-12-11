@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de CSS</title>
+        <style>
+            
+            html, body, h1, h2, h3, h4, p {
+                margin:0;
+                padding:0;
+            }
+
+            html {
+                background:rgb(229,229,229);
+            }
+
+            article, aside, section, header, footer, nav {
+                display:block;
+            }
+
+            main {
+                width: 1312px;
+                margin:0px auto;
+                padding:0px;
+                background-color:rgb(255,255,255);
+                font: 9px 'Source Sans Pro', sans-serif;
+            
+            
+            }
+
+            header {
+                padding:10px;
+                background-color:#04D4C4;
+                text-align:center;
+                margin-bottom:20px;
+                
+                
+                
+            }
+
+            /* renomear e organizar correto em sections*/
+            header div {
+                font-size:12px;
+                color:rgb(255, 255, 255);
+            }
+
+            nav { 
+                width:100%; 
+                background-color: rgb(255, 255, 255)
+            }
+
+            nav ul { 
+                list-style:none; 
+                margin:1000; 
+                padding:12px;
+                display: flex;
+                flex-direction:row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 40px;
+                border-top: 1px solid #9e9e9e69;
+                border-bottom: 1px solid #9e9e9e69;
+                width: 100%;
+                position: static;
+                }
+
+                nav ul li { 
+                    display:inline-block
+                }
+
+                nav ul li a {
+                    font-size: 0.50cm; 
+                    text-decoration:none; 
+                    color: #e33c74;
+                }
+
+                nav ul li a:hover {
+                    background-color:rgba(218, 208, 208, 0.877)
+                }
+
+
+            .logo-pesquisa {
+                background-color: white;
+                height:90px;
+                font-size:12px;
+            }
+            
+
+            .foto1 {
+                background-color:none;
+                height:393px;
+                font-size: 12px;
+                float:left;
+                width: 288px;
+                padding:20px;
+                margin-top: 80px;
+                
+            }
+
+            .foto2 {
+                background-color:white;
+                height:393px;
+                font-size: 12px;
+                float:left;
+                width: 288px;
+                padding:20px;
+                margin-top: 80px;
+                
+            }
+
+            .foto3 {
+                background-color:white;
+                height:393px;
+                font-size: 12px;
+                float:left;
+                width: 288px;
+                padding:20px;
+                margin-top: 80px;
+            }
+
+            .foto4 {
+                background-color:white;
+                height:393px;
+                font-size: 12px;
+                float:left;
+                width: 288px;
+                padding:20px;
+                margin-top: 80px;
+            }
+
+
+
+
+            .foto5 {
+                background-color:white;
+                height:393px;
+                font-size: 12px;
+                float:left;
+                width: 288px;
+                padding:20px;
+                margin-top: 80px;
+            }
+
+            .foto6 {
+                background-color:white;
+                height:393px;
+                font-size: 12px;
+                float:left;
+                width: 288px;
+                padding:20px;
+                margin-top: 80px;
+                
+            }
+
+            .foto7 {
+                background-color:white;
+                height:393px;
+                font-size: 12px;
+                float:left;
+                width: 288px;
+                padding:20px;
+                
+            }
+
+            .foto8 {
+                background-color:white;
+                height:393px;
+                font-size: 12px;
+                float:left;
+                width: 288px;
+                padding:20px;
+                margin-top:80px;
+                
+            }
+
+            
+
+        
+
+            footer {
+                padding:5px;
+                background-color:rgb(204,153,51);
+                text-align:center;
+                color:rgb(255,255,255);
+                clear:both;
+                
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <div >RECEBA EM CASA I ENVIAMOS PARA TODO O BRASIL</div>
+            </header>
+
+            
+            <section class="logo-pesquisa">
+                <div style="display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 50px;">
+
+                    <img src="./imagens/logo-donnafashionista.jpeg" 
+                        width="240" 
+                        height="85"
+                        title="foto da logo donna fashionista"
+                        alt="foto da logo donna fashionista"
+                        style="margin-left: 100px; margin-top: -10px;"> 
+
+                        <!--PESQUISA-->
+                        <form class="js-search-container js-search-form" action="/search/" method="get">
+                
+                            <div class="form-group m-0">
+                            
+                            <input 
+                            class="js-search-input form-control search-input" 
+                            autocomplete="off"
+                            name="q" 
+                            placeholder="O QUE VOCÊ QUER VESTIR HOJE?" 
+                            aria-label="BUSQUE AQUI"
+                            style=  "min-width: 240px; 
+                                    border-radius: 24px; 
+                                    padding: 15px 10px; 
+                                    border: 1px solid #0000006b;">
+
+                        <!--BOTÃO DE PESQUISA-->           
+                        <button type="submit" 
+                                class="btn search-input-submit" 
+                                value="BUSQUE AQUI" aria-label="BUSQUE AQUI">BUSCAR</button>
+                            </div>
+                            <div class="js-search-suggest search-suggest"></div>
+                        </form>
+                </div>
+            </section>
+        
+        
+
+            <!--menu donna fasionista-->
+            <nav id="navegação">
+                <ul>
+                    <li><a href="MAIS VENDIDOS.html">MAIS VENDIDOS</a></li>
+                    <li><a href="NOVIDADES.html">NOVIDADES</a></li>
+                    <li><a href="PRODUTOS.html">PRODUTOS</a></li>
+                    <li><a href="COLEÇÃO.html">COLEÇÃO</a></li>
+                    <li><a href="ACESSÓRIOS.html">ACESSÓRIOS</a></li>
+                    <li><a href="OUTLET.html">OUTLET</a></li>
+                    <li><a href="CONTATOS.html">CONTATOS</a></li>
+                </ul>
+            </nav>
+        
+            <!--FOTO DE CAPA REVEILLON-->
+            <section>
+            <div>
+                <div>
+                    <img src="./imagens/fotosolariscapa.jpeg" width="1100"
+                    title="foto reveillon capa"
+                    alt="foto reveillon capa"
+                    style="margin-top: 100px; margin-left:100px">
+                </div>
+            </div>
+        </section>
+
+
+
+            <!--foto da seções de roupas-->
+            <section> 
+                <div class="foto1">
+                    <div>
+
+                        <div>
+                        <img src="#"/>
+                        </div>
+
+                        <div
+                            style=
+                            "width:100%; 
+                            background-color: rgb(255, 255, 255);">
+
+                            <h3>RECEBA EM CASA</h3>
+                            <span>
+                            Enviamos para todo o Brasil
+                            </span>
+                        </div> 
+                </div>
+                    <img src="./imagens/primeira section/1shortsaia.jpeg" 
+                        width="270" 
+                        height="360" 
+                        title="foto 1 shrot saia bege"
+                        alt="foto 1 short saia bege">
+                </div>
+
+                
+            </section>
+
+            <!--foto da seções de roupas-->
+            <section >
+                    <div class="foto2">
+                        <div>
+
+                            <div>
+                            <img src="#"/>
+                            </div>
+
+                            <div style=
+                            "width:100%; 
+                            background-color: rgb(255, 255, 255);">
+                                <h3>EM ATÉ 6x SEM JUROS</h3>
+                                <span>
+                                Através dos cartões de créditos
+                                </span>
+                            </div> 
+                </div>
+                    <img src="./imagens/primeira section/2.cropped.jpeg" 
+                        width="270" 
+                        height="360" 
+                        title="foto 1 cropped rosa"
+                        alt="foto 1 cropped rosa">
+                </div>
+            </section>
+
+            <!--foto da seções de roupas-->
+            <section>
+                <div class="foto3">
+                    <div>
+                        <div>
+                        <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>LOJA 100% SEGURA</h3>
+                            <span>
+                            Seus dados seguros e criptografados
+                            </span>
+                        </div> 
+
+                <div>
+                <img src="./imagens/primeira section/3vestidos.jpeg" width="270" height="360" 
+                    title="foto 3 vestido jeans"
+                    alt="foto 3 vestido jeans">
+                </div>
+            </section>
+
+            <!--foto da seções de roupas-->
+            <section>
+                <div class="foto4">
+                    <div>
+                        <div>
+                        <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>PRONTA ENTREGA</h3>
+                            <span>
+                            Produtos no estoque
+                            </span>
+                        </div> 
+
+            <div>
+                <img src="./imagens/primeira section/4macaquinhos.jpeg" width="270" height="360" 
+                    title="foto 4 macaquinho"
+                    alt="foto 4 cropped macaquinho">
+            </div>
+            
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            <section> 
+                <div class="foto5">
+                    <div>
+                        <div>
+                        <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>RECEBA EM CASA</h3>
+                            <span>
+                            Enviamos para todo o Brasil
+                            </span>
+                        </div> 
+
+                
+                    <img src="./imagens/segunda section/1croppedpreto.jpeg" 
+                        width="270" 
+                        height="360" 
+                        title="foto 1 shrot saia bege"
+                        alt="foto 1 short saia bege">
+                    
+            </section>
+
+
+            <section> 
+                <div class="foto6">
+                    <div>
+                        <div>
+                        <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>RECEBA EM CASA</h3>
+                            <span>
+                            Enviamos para todo o Brasil
+                            </span>
+                        </div> 
+
+                
+                    <img src="./imagens/segunda section/2amarelo.jpeg" 
+                        width="270" 
+                        height="360" 
+                        title="foto 1 shrot saia bege"
+                        alt="foto 1 short saia bege">
+                  
+            </section>
+            
+            <!--foto da seções de roupas-->
+            <section>
+                <div class="foto3">
+                    <div>
+                        <div>
+                        <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>LOJA 100% SEGURA</h3>
+                            <span>
+                            Seus dados seguros e criptografados
+                            </span>
+                        </div> 
+            </div>
+            
+                <img src="./imagens/segunda section/3rosa.jpeg" 
+                    width="270" 
+                    height="360" 
+                    title="foto 7 ROSA"
+                    alt="foto 7 ROSA">
+                
+            </section>
+
+            <!--foto da seções de roupas-->
+            <section>
+                <div class="foto8">
+                    <div>
+                        <div>
+                        <img src="#"/>
+                        </div>
+                        <div>
+                            <h3>PRONTA ENTREGA</h3>
+                            <span>
+                            Produtos no estoque
+                            </span>
+                        </div> 
+                
+                <img src="./imagens/segunda section/4laranja.jpeg" 
+                    width="270" 
+                    height="360" 
+                    title="foto 8 LARANJA"
+                    alt="foto 8 LARANJA">
+               
+            </section>
+
+
+
+
+
+
+
+
+            
+
+            <footer>Endereco, telefone e outras informacoes</footer>
+        </main>
+    </body>
+</html>
